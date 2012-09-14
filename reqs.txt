@@ -2,12 +2,14 @@
 django>=1.4
 
 # Must-have packages
-PIL==1.1.7
-MySQL-python==1.2.3
-django-debug-toolbar==0.8.4
-south==0.7.3
+PIL
+MySQL-python
+django-debug-toolbar
+south
 django-ckeditor
 django-mptt
+pytils
+sorl-thumbnail
 
 # For Use Tree editor
 feincms
