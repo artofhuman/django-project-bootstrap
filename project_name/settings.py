@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Global settings for {{ project_name }} project.
 import os
 
@@ -43,10 +44,13 @@ USE_TZ = True
 # Example: "/home/media/media.lawrence.com/media/"
 MEDIA_ROOT = os.path.join(PUBLIC_DIR, 'media')
 
+# CKEDITOR
+CKEDITOR_UPLOAD_PATH = MEDIA_ROOT
+
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = '/media/'
+MEDIA_URL = '/public/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -56,7 +60,7 @@ STATIC_ROOT = os.path.join(PUBLIC_DIR, 'static')
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/static/'
+STATIC_URL = '/public/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -124,11 +128,16 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
 
-    #Vendor apps
-    # .....
+    # Must have Vendor apps
+    'mptt',
+    'south',
+    'ckeditor',
+
+    # Vendors
+    # ....
 
     #Project apps
-    # ..... 
+    # ....
 )
 
 # A sample logging configuration. The only tangible logging
@@ -161,7 +170,6 @@ LOGGING = {
 }
 
 try:
-    from clevercms.default_settings import *
+    from local_settings import *
 except ImportError:
     pass
-

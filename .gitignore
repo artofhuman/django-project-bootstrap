@@ -15,3 +15,6 @@ atlassian-ide-plugin.xml
 
 # Project
 /{{ project_name }}/local_settings.py
+
+# Virtualenv
+ENV

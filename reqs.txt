@@ -6,4 +6,8 @@ PIL==1.1.7
 MySQL-python==1.2.3
 django-debug-toolbar==0.8.4
 south==0.7.3
+django-ckeditor
+django-mptt
 
+# For Use Tree editor
+feincms
