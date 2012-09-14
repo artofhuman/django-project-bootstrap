@@ -18,11 +18,11 @@ python manage.py runserver
 ```
 
 # Project structure #
- - {{ project_name }}
- -- apps/ - Create you apps here ( pytnon manage.py startapp you_app_name {{ project_name }}.apps.you_app_name )
- -- lib/  - Create libs here
- -- templates/ - Put project templates here
- -- media/ - For upload media files
- -- static/ - For static files (css, js, etc.)
- -- settings.py - For global settings
- -- local_settings - For local settings (DB config, etc. )
+ * - {{ project_name }}
+ * apps/ - Create you apps here ( pytnon manage.py startapp you_app_name {{ project_name }}.apps.you_app_name )
+ * lib/  - Create libs here
+ * templates/ - Put project templates here
+ * media/ - For upload media files
+ * static/ - For static files (css, js, etc.)
+ * settings.py - For global settings
+ * local_settings - For local settings (DB config, etc. )
