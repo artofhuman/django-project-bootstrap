@@ -13,3 +13,6 @@ sorl-thumbnail
 
 # For Use Tree editor
 feincms
+
+# Vendor apps here
+# ...

@@ -12,8 +12,10 @@ django-admin.py startproject --template https://github.com/artofhuman/django-pro
 
 # Start procject #
 ```bash
+cd {{project_name}}
 virtualenv --no-site-packages ENV
 source ENV/bin/activate
+pip install -r reqs.txt
 python manage.py runserver
 ```
 
@@ -26,3 +28,4 @@ python manage.py runserver
  * static/ - For static files (css, js, etc.)
  * settings.py - For global settings
  * local_settings - For local settings (DB config, etc. )
+ * reqs.txt - Add vendor apss here (for install pip install -r reqs.txt)
