@@ -115,6 +115,10 @@ FIXTURE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    # Grapelli
+    'grappelli.dashboard',
+    'grappelli',
+
     # Django apps
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,12 +128,16 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
 
+    # Tests
+    'django_any',
+
     # Must have Vendor apps
     'mptt',
     'south',
     'ckeditor',
     'pytils',
     'sorl.thumbnail',
+    'widget_tweaks',
 
     # Vendors
     # ....
@@ -164,6 +172,18 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': True,
         },
+    }
+}
+
+GRAPPELLI_INDEX_DASHBOARD = '{{ project_name }}.dashboard.ProjectDashboard'
+GRAPPELLI_ADMIN_TITLE = '{{ project_name }} - Администрирование'
+
+# CKEDITOR
+CKEDITOR_UPLOAD_PATH = MEDIA_ROOT
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Full',
+        'autoParagraph': False
     }
 }
 

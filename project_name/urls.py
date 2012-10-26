@@ -25,5 +25,5 @@ urlpatterns += patterns('',
 urlpatterns += patterns('',
 
     # Page app
-    ('', include('youcanbuy.apps.page.urls')),
+    #('', include('youcanbuy.apps.page.urls')),
 )
