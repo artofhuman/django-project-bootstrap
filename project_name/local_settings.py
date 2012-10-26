@@ -18,6 +18,3 @@ DATABASES = {
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '{{ secret_key }}'
-
-# CKEDITOR
-CKEDITOR_UPLOAD_PATH = MEDIA_ROOT

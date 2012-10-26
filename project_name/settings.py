@@ -175,8 +175,8 @@ LOGGING = {
     }
 }
 
-GRAPPELLI_INDEX_DASHBOARD = '{{ project_name }}.dashboard.ProjectDashboard'
-GRAPPELLI_ADMIN_TITLE = '{{ project_name }} - Администрирование'
+GRAPPELLI_INDEX_DASHBOARD = u'{{ project_name }}.dashboard.ProjectDashboard'
+GRAPPELLI_ADMIN_TITLE = u'{{ project_name }}'
 
 # CKEDITOR
 CKEDITOR_UPLOAD_PATH = MEDIA_ROOT

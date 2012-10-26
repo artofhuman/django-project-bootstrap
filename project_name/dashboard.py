@@ -1,14 +1,6 @@
 # -*- coding: utf-8 -*-
 #author: Semen Pupkov (semen.pupkov@gmail.com)
 
-"""
-This file was generated with the customdashboard management command and
-contains the class for the main dashboard.
-
-To activate your index dashboard add the following to your settings.py::
-    GRAPPELLI_INDEX_DASHBOARD = 'youcanbuy.dashboard.CustomIndexDashboard'
-"""
-
 from django.utils.translation import ugettext_lazy as _
 from django.core.urlresolvers import reverse
 from django.contrib.sites.models import Site
@@ -18,9 +10,6 @@ from grappelli.dashboard.utils import get_admin_site_name
 
 
 class ProjectDashboard(Dashboard):
-    """
-    Custom index dashboard for {{ project_name }}
-    """
 
     def init_with_context(self, context):
         site_name = get_admin_site_name(context)
@@ -28,7 +17,7 @@ class ProjectDashboard(Dashboard):
 
         # append an app list module for "Applications"
         self.children.append(modules.AppList(
-            u'Приложения',
+            _('Applications'),
             collapsible=True,
             column=1,
             css_classes=('collapse closed',),
@@ -36,20 +25,15 @@ class ProjectDashboard(Dashboard):
         ))
 
         # append an app list module for "Administration"
-        self.children.append(modules.ModelList(
-            u'Администрирование',
-            column=1,
-            collapsible=False,
-            models=('django.contrib.*', 'youcanbuy.apps.account.models.YoucanbuyUser'),
-        ))
+        # ...
 
         # append another link list module for "support".
         self.children.append(modules.LinkList(
-            u'Меню',
+            _('Menu'),
             column=2,
             children=[
                 {
-                    'title': 'Перейти на сайт',
+                    'title': _('Go to site'),
                     'url': 'http://' + current_site.domain,
                     'external': True,
                 }

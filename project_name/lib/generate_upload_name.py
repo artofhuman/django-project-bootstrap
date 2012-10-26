@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+#author: Semen Pupkov (semen.pupkov@gmail.com)
+
 from hashlib import md5
 from os import path as op
 from time import time
