@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-#author: Semen Pupkov (semen.pupkov@gmail.com)
 
 from django.utils.translation import ugettext_lazy as _
 from django.core.urlresolvers import reverse

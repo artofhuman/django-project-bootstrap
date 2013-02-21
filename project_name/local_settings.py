@@ -13,8 +13,8 @@ DATABASES = {
         'PASSWORD': 'root',                         # Not used with sqlite3.
         'HOST': '',                                 # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                                 # Set to empty string for default. Not used with sqlite3.
+        'OPTIONS': {
+            "init_command": "SET storage_engine=INNODB",
+        }
     }
 }
-
-# Make this unique, and don't share it with anybody.
-SECRET_KEY = '{{ secret_key }}'

@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-#author: Semen Pupkov (semen.pupkov@gmail.com)
 
 from hashlib import md5
 from os import path as op
@@ -7,7 +6,8 @@ from time import time
 
 
 def generate_upload_name(instance, filename, prefix=None, unique=False):
-    """ Auto generate name for File and Image fields.
+    """
+    Auto generate name for File and Image fields.
     """
     ext = op.splitext(filename)[1]
     name = str(instance.pk or '') + filename + (str(time()) if unique else '')
