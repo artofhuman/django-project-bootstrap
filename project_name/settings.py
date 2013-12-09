@@ -24,6 +24,8 @@ INSTALLED_APPS = (
     'widget_tweaks',
     'debug_toolbar',
     'feincms',
+    'treemenu',
+    'page'
 
     # Vendors
     # ...

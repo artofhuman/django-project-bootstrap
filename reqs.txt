@@ -11,6 +11,8 @@ django-mptt
 pytils
 sorl-thumbnail
 django-widget-tweaks
+django-clever-pages
+django-treemenu
 
 # For Use Tree editor
 feincms
