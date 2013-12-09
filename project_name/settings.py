@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-# Global settings for {{ project_name }} project.
+# coding: utf-8
 from _settings import *
 
 INSTALLED_APPS = (
@@ -15,9 +14,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-
-    # Tests
-    'django_any',
 
     # Must have Vendor apps
     'mptt',

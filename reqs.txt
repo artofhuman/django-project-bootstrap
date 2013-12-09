@@ -1,11 +1,11 @@
 #Django
-django>=1.4
+django>=1.5
 
 # Must-have packages
-PIL
+Pillow
 MySQL-python==1.2.3
 django-debug-toolbar
-south==0.7.6
+south
 django-ckeditor
 django-mptt
 pytils
@@ -15,11 +15,8 @@ django-widget-tweaks
 # For Use Tree editor
 feincms
 
-# Test
-django-whatever
-
 #Admin
-django-grappelli==2.4.2
+django-grappelli
 
 # Vendor apps here
 # ...
