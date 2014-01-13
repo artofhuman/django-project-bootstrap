@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# coding: utf-8
 
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
@@ -10,6 +10,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Admin
     url(r'^admin/', include(admin.site.urls)),
+    (r'^grappelli/', include('grappelli.urls')),
 
     # Must have vendors
     (r'^ckeditor/', include('ckeditor.urls')),

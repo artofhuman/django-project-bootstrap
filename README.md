@@ -1,7 +1,7 @@
 # project_name|title
 ## Prerequisites
 
-    - python >= 2.5
+    - python >= 2.6
     - pip
     - virtualenv/wrapper (optional)
 
@@ -16,6 +16,8 @@
     source ENV/bin/activate
     pip install -r reqs.txt
     pip freeze > reqs.txt
+    python manage.py syncdb
+    python manage.py migrate
     python manage.py runserver
 
 # Run tests
