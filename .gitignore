@@ -15,7 +15,7 @@ atlassian-ide-plugin.xml
 .ropeproject
 
 # Project
-/{{ project_name }}/local_settings.py
+/project_name/local_settings.py
 media/cache
 cache
 
