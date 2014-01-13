@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# coding: utf-8
 
 from django.utils.translation import ugettext_lazy as _
 from django.core.urlresolvers import reverse
@@ -20,7 +20,7 @@ class ProjectDashboard(Dashboard):
             collapsible=True,
             column=1,
             css_classes=('collapse closed',),
-            exclude=('django.contrib.*',),
+            exclude=('',),
         ))
 
         # append an app list module for "Administration"
