@@ -24,7 +24,4 @@ urlpatterns += patterns('',
 
 # Apps
 urlpatterns += patterns('',
-
-    # Page app
-    ('', include('page.urls'))
 )
