@@ -1,0 +1,6 @@
+# This files include libs only for develop
+#
+# pip install -r requirements/test.txt
+-r base.txt
+
+coverage==3.6
