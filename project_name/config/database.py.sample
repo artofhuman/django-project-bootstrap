@@ -1,0 +1,20 @@
+"""
+Database configuration file
+NOTE: Do not add this file to version control system 
+"""
+
+# See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
+DB_CONFIG = {
+    'development': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'development',
+    },
+    'production': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'production',
+    },
+    'test': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'test',
+    },
+}

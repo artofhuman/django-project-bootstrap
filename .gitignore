@@ -1,6 +1,9 @@
 # OS
 .DS_Store
 
+# Virtualenv
+ENV
+
 # Python
 *.pyc
 *.pyo
@@ -15,9 +18,6 @@ atlassian-ide-plugin.xml
 .ropeproject
 
 # Project
-/project_name/local_settings.py
 media/cache
 cache
-
-# Virtualenv
-ENV
+*/config/database.py.sample

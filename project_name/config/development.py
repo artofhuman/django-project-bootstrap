@@ -6,6 +6,9 @@ and modified with love
 
 from __future__ import absolute_import
 from .base import *
+from .database import DB_CONFIG
+
+DATABASES['default'] = DB_CONFIG['development']
 
 # Recipients of traceback emails and other notifications.
 ADMINS = (
