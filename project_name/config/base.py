@@ -186,7 +186,17 @@ DJANGO_APPS = (
 
 # Apps specific for this project go here.
 LOCAL_APPS = (
+    'ckeditor',
 )
+
+
+CKEDITOR_UPLOAD_PATH = normpath(join(MEDIA_ROOT, 'user'))
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Full',
+        'autoParagraph': False
+    }
+}
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS
