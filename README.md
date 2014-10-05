@@ -1,9 +1,7 @@
 # project_name|title
 ## Prerequisites
 
-    - python >= 2.6
-    - pip
-    - virtualenv/wrapper (optional)
+    - python >= 2.7 or >=3.0
 
 # Usage
 ## Create Django Project From template
@@ -12,8 +10,9 @@
 
 ## Install requirements
 
-for development run `pip install -r requirements/development.txt`
-
+  for development run `pip install -r requirements/development.txt`
+  
+  for production run `pip install -r requirements.txt`
 
 # Run tests
 
