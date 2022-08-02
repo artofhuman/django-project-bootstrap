@@ -1,4 +1,4 @@
 # This files include libs only for production
 -r base.txt
 
-gunicorn==0.17.4
+gunicorn==19.5.0
